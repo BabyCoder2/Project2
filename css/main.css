@@ -11,7 +11,7 @@
     .layout{
         height: 100vh;
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns:auto;
         grid-template-areas: 
         "header header"
         "sidebar main"
@@ -50,20 +50,20 @@
         grid-area: footer;
     }
     .grid-container{
-        display: grid;
-        grid-template-columns: (2,1fr);
-        grid-auto-rows: 320px;
-    
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0;
     }
-     .card{
-        height: auto;
-        width: 100%;
+    .card{
+    
         border: 2px ridge mediumorchid;
         display: flex;
         flex-direction: column ;
         align-items: center;
-        text-align: center
-     }
+        text-align: center;
+    }
+    
      figcaption {
         font-style: italic;
         color: #888;
