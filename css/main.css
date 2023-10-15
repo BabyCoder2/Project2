@@ -1,3 +1,4 @@
+@import url(../css/card.css);
 *{
     box-sizing: border-box;
         margin: 0;
@@ -10,7 +11,7 @@
     
     .layout{
         height: 100vh;
-        display: grid;
+        display:grid;
         grid-template-columns:auto;
         grid-template-areas: 
         "header header"
@@ -31,8 +32,7 @@
         background-color: mediumorchid;
         border-left: 5px solid #ccc;
         font-style: italic;
-        margin: 0;
-        padding: 5px;
+        
     }
     .navbar li{
         text-align: center;
@@ -43,6 +43,8 @@
     main{
         border: 2px ridge mediumorchid;
         grid-area: main;
+        display: flex;
+        justify-content:center ;
     }
     footer{
         text-align: center ;
@@ -51,21 +53,7 @@
     }
     .grid-container{
         display:flex;
-        flex-direction: column;
+        flex-direction:column;
         align-items: center;
-        margin-bottom: 0;
-    }
-    .card{
-    
-        border: 2px ridge mediumorchid;
-        display: flex;
-        flex-direction: column ;
-        align-items: center;
-        text-align: center;
     }
     
-     figcaption {
-        font-style: italic;
-        color: #888;
-        margin-top: 5px;
-      }

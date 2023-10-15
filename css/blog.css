@@ -3,16 +3,16 @@ body{
     background-color: antiquewhite;
 }
 .layout{
-    height: 100vh;
     display: grid;
-    grid-template-rows: 80px auto 60px ;
+    grid-template-rows: 80px auto;
     grid-template-areas: 
     "header"
     "main"
     "footer";
 }
-grid-container {
+.grid-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }  
@@ -29,6 +29,8 @@ grid-container {
 main{
     border: 2px ridge mediumorchid;
     grid-area: main;
+    display: flex;
+    height: 100%;
 }
 footer{
     text-align: center ;
@@ -46,4 +48,4 @@ figcaption {
         font-style: italic;
         margin: 0;
         padding: 5px;
-}
+  }
